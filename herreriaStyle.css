@@ -1,0 +1,351 @@
+@font-face {
+    font-family:BankGothicLtBT;
+    src: url(Plantatillas/bank\ gothic\ light\ bt.ttf);
+}
+
+*{
+    font-family: BankGothicLtBT,Arial;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(39, 39, 46);
+}
+
+
+header{
+    display: grid;
+    height: 600px;
+    width: 100%;
+}
+
+header div {
+    background: linear-gradient(rgba(23, 22, 22, 0.96),rgba(42, 43, 47, 0.058)), url(IMGOPT/WhatsApp-Image-2022-06-15-at-8.26.58-PM\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #ffff;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+header div h1 { 
+    padding: 40px;
+    display: flex;
+    font-size: 90px;
+    padding: 5%;
+    text-align: right;
+
+}
+.carrusel{
+    width: 10%;
+    height: 100px;
+    border-radius: 10%;
+    
+}
+
+.dark{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: rgba(39, 39, 46, 0.792);
+    color: #ffff;
+    border-radius: 5%;
+    z-index: 3;
+    display: flex;
+    font-size: 100%;
+    align-items: center;
+    justify-content: space-around
+
+
+    
+}
+
+
+.exp{
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
+    text-align: center;
+    padding: 6% 6% 0% 6%;
+
+}
+
+
+.swiper {
+    width: 95%;
+    height: 350px;
+    border-radius: 4%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 40px;
+    background: rgba(59, 13, 13, 0);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  .lista{
+    padding:10%;
+  }
+  ul{
+    display: flex;
+    color: #ffff;
+    flex-direction: column;
+    align-items: center;
+    font-size:400%;
+    list-style: none;
+    padding-inline-start: 0%;
+
+}
+ul li {
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+  .info{
+    padding: 10px;
+    text-align: center;
+    font-size: 300%;
+    background-color: #ffff;
+    padding-left: 70px;
+ 
+  }
+  .info p , info div{
+    padding: 40px;
+  }
+  
+
+.tel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail img{
+    height: 70px;
+    width: 70px;
+}
+
+.tel img{
+        height: 40px;
+        width: 40px;
+}
+
+
+@media screen and (max-width: 1500px) { 
+    header{
+        height: 600px;
+    }
+
+    .exp{
+        color: #ffff;
+        display: flex;
+        justify-content: center;
+        font-size: 400%;
+        text-align: center;
+        padding: 6% 6% 0% 6%;
+    
+    }
+    header div {
+        background-attachment: inherit;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 30%;
+        color: #ffff;
+        height: 800px;
+        justify-content: center;
+    
+
+    }
+    header div h1 { 
+        height: 60%;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        padding: 5%;
+        text-align: center;
+       
+    }
+    .dark{
+        height: 40px;
+        width: 90%;
+        font-size: 35%;
+    }
+    .swiper {
+        width: 100%;
+        height: 250px;
+        
+      }
+      
+    .exp, ul, .info{
+        font-size: 150%;
+        }
+    
+    .info p , info div{
+        padding: 10px;
+        }
+          
+    .info,ul{
+        padding-left: 0px; 
+        }
+    
+}
+
+@media screen and (max-height:800px){
+    header{
+        height: 42rem;
+    }
+    header div{
+        height: 700px;
+    }
+
+}
+
+@media screen and (max-height:400px){
+    header div h1{
+        height: 40%;
+    }
+    .dark{
+        height: 40px;
+        width: 100%;
+        font-size: 13px; }
+}
+
+@media screen and (max-width: 1500px) and (hover:hover){
+    .dark{
+        height: 90%;
+        width: 90%;
+        
+    }
+    .dark:hover  {
+        transition: all 1s;
+        font-size: 0rem;
+        background: rgba(52, 52, 53, 0);
+    }
+    .carrusel:hover {
+        height: 150px;
+    }
+    header div {
+        display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    }
+    header div h1 {
+        font-size: 90px;
+        text-align: right;
+    }
+    .exp, ul, .info{
+        font-size: 300%;
+        }
+    
+}
+
+@media screen and (max-height:800px) and (hover:hover){
+    .dark{
+        height: 90%;
+        width: 90%;
+        font-size: xx-large;
+    }
+    .dark:hover  {
+        transition: all 1s;
+        font-size: 0rem;
+        background: rgba(52, 52, 53, 0);
+    }
+    .carrusel:hover {
+        height: 150px;
+    }
+}
+
+@media screen and (max-height:800px) and (max-width: 800px) and (hover:hover){
+    header{
+        height: 25rem;
+    }
+    header div{
+        height: 500px;
+    }
+    .dark{
+        font-size: small;
+    }
+}
+
+@media (hover:hover){
+    .dark:hover  {
+        transition: all 1s;
+        font-size: 0rem;
+        background: rgba(52, 52, 53, 0);
+    }
+    .carrusel:hover {
+        height: 150px;
+    }
+    @media screen and (max-width: 1600px){
+       .dark{
+        font-size: 80%}
+    }
+    @media screen and (max-width: 1300px){
+        .dark{
+         font-size: 60%}
+     }
+     @media screen and (max-width: 1000px){
+        .dark{
+         font-size: 45%}
+     }
+
+
+
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
